@@ -7,7 +7,7 @@ export const articles = [
         title: "Dragon Spotted in Northern Highlands",
         snippet: "Reports have come in from local merchants...",
         image: beachnight,
-        tags: ["news", "breaking news"],
+        tags: ["breaking news", "news"],
         content: [
             {
                 type: "paragraph",

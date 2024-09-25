@@ -30,9 +30,7 @@ const HomePage = () => {
                         <h3>{article.title}</h3>
                         <p>{article.snippet}</p>
                         <div>
-                            {article.tags && article.tags.map((tag, index) => (
-                                <span key={index}>{tag}</span>
-                            ))}
+                            {article.tags && <span>{article.tags[0]}</span>}
                         </div>
                         <Link to={`/articles/${article.id}`}>Read More</Link>
                     </div>
