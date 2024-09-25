@@ -3,7 +3,7 @@ import HomePage from './pages/HomePage';
 import ArticlePage from './pages/ArticlePage';
 import QuestBoardPage from './pages/QuestBoardPage';
 import ProfilePage from './pages/ProfilePage';
-import Header from './components/Header.jsx';
+import Header from './components/Header/Header.jsx';
 import Footer from './components/Footer';
 
 function App() {
