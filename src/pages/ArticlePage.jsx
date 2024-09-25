@@ -13,8 +13,15 @@ const ArticlePage = () => {
     return (
         <div>
             <h2>{article.title}</h2>
-            <p>{article.snippet}</p>
-            <p>This is the full content of the article.</p>
+            {article.content.map((contentItem, index) => {
+                if (contentItem.type === "image") {
+                    return <img key={index} src={contentItem.src} alt={contentItem.alt} />;
+                }
+                if (contentItem.type === "paragraph") {
+                    return <p key={index}>{contentItem.text}</p>;
+                }
+                return null;
+            })}
         </div>
     );
 };
