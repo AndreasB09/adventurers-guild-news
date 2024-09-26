@@ -13,7 +13,8 @@ const ArticlePage = () => {
     return (
         <div>
             <h2>{article.title}</h2>
-            {article.content.map((contentItem, index) => {
+            {article.content && article.content.length > 0 ? (
+                article.content.map((contentItem, index) => {
                 if (contentItem.type === "image") {
                     return <img key={index} src={contentItem.src} alt={contentItem.alt} />;
                 }
@@ -21,7 +22,10 @@ const ArticlePage = () => {
                     return <p key={index}>{contentItem.text}</p>;
                 }
                 return null;
-            })}
+                })
+            ) : (
+                <p>No content available for this article.</p>
+            )}
         </div>
     );
 };

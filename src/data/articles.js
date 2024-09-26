@@ -25,13 +25,25 @@ export const articles = [
         id: 2,
         title: "Top 5 Potions for Beginners",
         snippet: "Never leave the guild without these potions...",
-        tags: ["beginner"]
+        tags: ["beginner"],
+        content: [
+            {
+              type: "paragraph",
+              text: "Potions can be lifesaving tools in your adventuring journeys. Here are the top 5 potions every beginner should have."
+            }
+        ]
     },
     { 
         id: 3,
         title: "Dungeon Cleared by Whitefang Guild",
         snippet: "Breaking news: The Dungeon of Shadows has been cleared...",
-        tags: ["experienced"]
+        tags: ["experienced"],
+        content: [
+            {
+              type: "paragraph",
+              text: "The Whitefang Guild achieved an incredible feat by clearing the dreaded Dungeon of Shadows. Here's what they faced."
+            }
+        ]
     }
 ];
   
