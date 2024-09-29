@@ -1,13 +1,16 @@
 import { articles } from "../data/articles";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import QuestFeed from "../components/QuestFeed";
 
 const HomePage = () => {
     const [filterTag, setFilterTag] = useState("");
 
     const filteredArticles = filterTag
-        ? articles.filter((article) => article.tags.includes(filterTag))
-        : articles;
+        ? articles.filter((article) => article.tags.includes(filterTag) && !article.featured)
+        : articles.filter(article => !article.featured);
+
+    const featuredArticle = articles.find(article => article.featured);
 
     return (
         <div>
@@ -15,6 +18,17 @@ const HomePage = () => {
             <p>Stay up to date with the latest quests, guild news, and tips for aspiring adventurers.</p>
 
             <h3>Latest Guild News</h3>
+            {featuredArticle && (
+                <section>
+                    <h3>Featured News</h3>
+                    <div>
+                        {featuredArticle.image && <img src={featuredArticle.image} alt={featuredArticle.title} />}
+                        <h3>{featuredArticle.title}</h3>
+                        <p>{featuredArticle.snippet}</p>
+                        <Link to={`/articles/${featuredArticle.id}`}>Read More</Link>
+                    </div>
+                </section>
+            )}
 
             <div>
                 <button onClick={() => setFilterTag("")}>All</button>
@@ -36,6 +50,8 @@ const HomePage = () => {
                     </div>
                 ))}
             </div>
+
+            <QuestFeed />
         </div>
 
         
