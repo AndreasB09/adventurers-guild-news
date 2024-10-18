@@ -11,7 +11,9 @@ const ProfilePage = () => {
         race: '',
         class: '',
         alignment: '',
-        abilityScores: {}
+        abilityScores: {},
+        spells: [],
+        feat: '',
     });
 
     const [loading, setLoading] = useState(false);
@@ -41,12 +43,25 @@ const ProfilePage = () => {
                 abilityScores[ability.name] = Math.floor(Math.random() * 20) + 1;
             }
 
+            const spellsResponse = await fetch(`${API_BASE}/spells`);
+            const spellsData = await spellsResponse.json();
+            const randomSpells = [];
+            for (let i = 0; i < 2; i++) {
+                randomSpells.push(getRandomItem(spellsData.results).name);
+            }
+
+            const featsResponse = await fetch(`${API_BASE}/feats`);
+            const featsData = await featsResponse.json();
+            const randomFeat = getRandomItem(featsData.results).name;
+
             const newCharacter = {
                 name: 'Adventurer',
                 race: randomRace.name,
                 class: randomClass.name,
                 alignment: randomAlignment.name,
                 abilityScores: abilityScores,
+                spells: randomSpells,
+                feat: randomFeat,
             };
 
             setCharacter(newCharacter);
@@ -103,8 +118,22 @@ const ProfilePage = () => {
                 )}
             </section>
 
+            <section>
+                <h3>Spells</h3>
+                <ul>
+                    {character.spells.map((spell, index) => (
+                        <li key={index}>{spell}</li>
+                    ))}
+                </ul>
+            </section>
+
+            <section>
+                <h3>Feat</h3>
+                <p>{character.feat}</p>
+            </section>
+
             <button onClick={fetchRandomCharacter} disabled={loading}>
-                {loading ? 'Uppdating...' : 'Uppdate Profile'}
+                {loading ? 'Updating...' : 'Update Profile'}
             </button>
 
             <h3>Accepted Quests:</h3>
