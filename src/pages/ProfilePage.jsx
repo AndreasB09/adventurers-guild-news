@@ -74,6 +74,8 @@ const ProfilePage = () => {
         acceptedQuests.includes(quest.id)
     );
 
+    const abilityOrder = ['STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA'];
+
     return (
         <div>
             <h2>Adventurer Profile</h2>
@@ -89,19 +91,20 @@ const ProfilePage = () => {
                 <h3>Ability Scores</h3>
                 {character.abilityScores ? (
                 <ul>
-                    {Object.entries(character.abilityScores).map(([ability, score]) => (
-                    <li key={ability}>
-                        {ability}: {score}
-                    </li>
+                    {abilityOrder.map((ability) => (
+                        <li key={ability}>
+                            {ability}: {character.abilityScores[ability] || 0}
+                        </li>
                     ))}
                 </ul>
+
                 ) : (
                 <p>No ability scores yet.</p>
                 )}
             </section>
 
             <button onClick={fetchRandomCharacter} disabled={loading}>
-                {loading ? 'Generating...' : 'Randomize Character'}
+                {loading ? 'Uppdating...' : 'Uppdate Profile'}
             </button>
 
             <h3>Accepted Quests:</h3>
