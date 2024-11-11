@@ -19,7 +19,7 @@ const ProfilePage = () => {
     const [loading, setLoading] = useState(false);
 
     const getRandomItem = (items) => items[Math.floor(Math.random() * items.length)];
-
+    
     const fetchRandomCharacter = useCallback(async () => {
         setLoading(true);
 
@@ -52,7 +52,10 @@ const ProfilePage = () => {
 
             const featsResponse = await fetch(`${API_BASE}/feats`);
             const featsData = await featsResponse.json();
-            const randomFeat = getRandomItem(featsData.results).name;
+            console.log("Feats API Data:", featsData);
+
+            const randomFeat = featsData.results[Math.floor(Math.random() * featsData.results.length)].name;
+            console.log("Selected Random Feat:", randomFeat);
 
             const newCharacter = {
                 name: 'Adventurer',
@@ -97,9 +100,9 @@ const ProfilePage = () => {
             <section>
                 <h3>Character Information</h3>
                 <p>Name: {character.name}</p>
-                <p>Race: {character.race || 'Loading..'}</p>
-                <p>Class: {character.class || 'Loading..'}</p>
-                <p>Alignment: {character.alignment || 'Loading..'}</p>
+                <p>Race: {character.race || 'Loading...'}</p>
+                <p>Class: {character.class || 'Loading...'}</p>
+                <p>Alignment: {character.alignment || 'Loading...'}</p>
             </section>
 
             <section>

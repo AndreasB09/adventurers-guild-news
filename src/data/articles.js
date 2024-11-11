@@ -75,29 +75,102 @@ export const articles = [
     },
     { 
         id: 3,
-        title: "Dungeon Cleared by Whitefang Guild",
-        snippet: "Breaking news: The Dungeon of Shadows has been cleared...",
-        tags: ["experienced"],
+        title: "Mysterious bank robbery leaves authorities baffled",
+        snippet: "A daring bank heist in the heart of the city has authorities on edge, with no clear leads and a web of speculation surrounding the case.",
+        tags: ["news", "crime", "mystery"],
         content: [
             {
               type: "paragraph",
-              text: "The Whitefang Guild achieved an incredible feat by clearing the dreaded Dungeon of Shadows. Here's what they faced."
+              text: "In a startling turn of events, the city's central bank was robbed in the dead of night, leaving the authorities and the City Guard with more questions than answers. The vault, known for its complex enchantments and formidable security, was breached with a level of precision that has confounded even the most seasoned investigators. No alarms were triggered, and there were no witnesses, sparking speculation that whoever orchestrated the heist was no ordinary thief."
+            },
+            {
+              type: "paragraph",
+              text: "Adding to the intrigue, guards discovered traces of claw marks and deep indentations in the marble floors—signs commonly associated with the Shadow Hounds, spectral canines known to serve Lord Malachor the Enigmatic, whose influence has spread like a dark tide across the realm. Rumors suggest that Nightstalker Wraiths and Obsidian Golems might also be in play, adding to the unease. While these traces provide an unsettling link to Malachor, officials remain tight-lipped about drawing conclusions too soon."
+            },
+            {
+              type: "paragraph",
+              text: "Despite these findings, investigators are exploring additional leads. Witness reports have mentioned suspicious activity near the river docks, where a known group of rogue mercenaries operates. While their involvement in such a high-profile robbery would be unprecedented, it has not been ruled out. Additionally, some citizens claim to have seen figures cloaked in magical shadow moving swiftly through the marketplace on the night of the robbery."
+            },
+            {
+              type: "paragraph",
+              text: "The authorities have responded by doubling patrols around key city structures and urging the public to remain vigilant. Captain Alaric of the City Guard issued a statement: \"We are taking this matter extremely seriously and are committed to finding those responsible. We ask anyone with information, no matter how small, to come forward immediately.\""
             }
         ]
     },
     { 
         id: 4,
-        title: "This is a featured article",
-        snippet: "This featured article will be something...",
+        title: "Mastering the Hunt: How to Track and Identify Were-Creatures",
+        snippet: "Delving into the art of tracking the elusive were-creatures requires more than just keen senses; it demands experience, insight, and the right tools.",
         image: greenforest,
-        tags: ["experienced"],
+        tags: ["experienced", "tracking", "monsters"],
         content: [
-            {
-              type: "paragraph",
-              text: "The featured article is sponsored by the Miners Association."
-            }
+          {
+            type: "paragraph",
+            text: "Were-creatures, known for their dual nature and shape-shifting abilities, have long posed challenges to even the most seasoned trackers. From werewolves lurking in dense forests to werebears prowling the tundra, each type of were-creature leaves distinct clues that, when identified correctly, can be used to follow their trails and anticipate their movements. This guide provides expert tips for recognizing their signs and patterns."
+          },
+          {
+            type: "paragraph",
+            text: "Before setting out to track a were-creature, it's crucial to understand their unique characteristics. Unlike ordinary predators, were-creatures exhibit a blend of animalistic and humanoid behaviors. They are most active during the full moon, but experienced trackers know that many types retain partial control over their transformations outside of these phases. Knowing when and where these beings are most likely to hunt or hide is half the battle."
+          },
+          {
+            type: "paragraph",
+            text: "Tracking were-creatures requires a sharp eye and detailed knowledge. Here are the most common signs:\n\n- **Unnatural Tracks**: Were-creatures often leave tracks that start as human footprints and morph into clawed, animalistic paw prints. These transitional prints are a telltale sign of a recent transformation.\n- **Claw Marks on Trees and Rocks**: Large gouges, often higher than any natural animal could reach, indicate territorial marking or aggressive behavior.\n- **Strange Fur and Sheddings**: Were-creatures often leave behind tufts of fur that may look ordinary at first glance but carry an unnatural thickness or shine. Collecting samples can help identify specific types."
+          },
+          {
+            type: "paragraph",
+            text: "Different were-creatures leave different clues:\n\n- **Werewolves**: Known for howling and traveling in packs during the full moon. Trackers often find bloodied paw prints and remnants of partially consumed prey near their lairs.\n- **Werebears**: Solitary and immensely strong, werebears leave deep, wide footprints. They’re often found near rivers or in mountainous regions.\n- **Wererats**: More cunning and small, wererats are found in urban settings, leaving clawed marks on alley walls and gnawed scraps of food behind.\n- **Other Variants**: Werecats, weretigers, and other regional variants may exhibit behaviors unique to their animal nature, such as claw marks on trees for werecats or lingering in warm climates for weretigers."
+          },
+          {
+            type: "paragraph",
+            text: "When tracking were-creatures, remember:\n\n- **Heightened Senses**: Were-creatures often have acute senses and may double back on their trails to ambush pursuers. Be prepared for unexpected encounters.\n- **Silver Markers**: Using silver powder to mark trees or stones can help prevent your scent from being detected by were-creatures, as their supernatural nature reacts subtly to silver.\n- **Patience and Silence**: Never underestimate their intelligence. Stay silent, keep low to the ground, and move slowly."
+          },
+          {
+            type: "paragraph",
+            text: "Tracking and identifying were-creatures is a perilous but rewarding endeavor. With the right knowledge, tools, and skills, experienced trackers can turn the tables on these supernatural predators. Whether you're following the trail of a werewolf or piecing together clues about a wererat in the city, staying vigilant and prepared is key to a successful hunt."
+          }
         ],
-        // featured: true
     },
+        {
+          id: 5,
+          title: "Rising Peril at Sea: The Mystery of Aggressive Sea Monsters",
+          snippet: "Sailors and adventurers alike face growing dread as the seas become increasingly dangerous, with sea creatures displaying unexplained aggression.",
+          tags: ["experienced", "sea monsters", "nautical threats"],
+          content: [
+              {
+                  type: "paragraph",
+                  text: "The sea has long been a source of both prosperity and peril for sailors and merchants. Recently, however, reports of increasingly aggressive sea monsters have turned the waters into a realm of fear. Over the past month, several trade ships have vanished without a trace, leaving families and guilds in distress and maritime trade at a standstill. The once-bustling ports now echo with uncertainty as sailors exchange anxious glances and ships remain docked, wary of the mysterious threat lurking beneath the waves."
+              },
+              {
+                  type: "paragraph",
+                  text: "Veteran adventurers and seafarers have weighed in on the situation, but even the most seasoned among them are baffled by what might have caused this sudden shift in behavior. Captain Elara Stormchaser, a famed adventurer known for her mastery of both land and sea, has spoken candidly: *\"The problem with dealing with aquatic monsters is that their domain provides unique challenges that most adventurers are ill-equipped to handle. Visibility is poor, the pressure is immense, and their movements are unpredictable.\"* Her words have resonated with many who understand that beneath the surface lies a world as foreign as it is treacherous."
+              },
+              {
+                  type: "paragraph",
+                  text: "The creatures involved range from massive krakens capable of dragging entire ships under to swarms of sirens whose haunting songs lure sailors to their doom. Witnesses claim to have seen giant serpents with scales as hard as iron and monstrous leviathans surfacing to unleash chaos before disappearing into the dark depths. Such encounters have left even the bravest captains questioning their ability to command a safe voyage."
+              },
+              {
+                  type: "image",
+                  src: "path/to/image",
+                  alt: "The mysterious, aggressive sea monsters have transformed the waters into a perilous unknown."
+              },
+              {
+                  type: "paragraph",
+                  text: "Adding to the enigma is the complete lack of understanding of what has provoked this surge in aggression. Some theorists suggest that recent underwater tremors or disruptions in magical ley lines may have disturbed the creatures’ natural habitats. Others fear the possibility of an ancient sea deity stirring from its slumber, angered by human encroachment."
+              },
+              {
+                  type: "paragraph",
+                  text: "The Maritime Guild has issued warnings to all sailors and trade companies, advising them to remain in port until further notice or risk facing the unknown dangers. Port cities that thrive on seaborne trade have seen their economies suffer, and the local guilds are organizing emergency meetings to plan responses and potential expeditions to uncover the source of the creatures' newfound hostility."
+              },
+              {
+                  type: "image",
+                  src: "path/to/second/image",
+                  alt: "Sailors are increasingly hesitant to set sail, fearing what awaits them beyond the horizon."
+              },
+              {
+                  type: "paragraph",
+                  text: "For now, the mystery remains unsolved, and the sea continues to guard its secrets fiercely. Adventurers with nautical expertise are in high demand, and the call for experienced sea-warriors has never been more urgent. As more ships disappear and tales of monstrous encounters grow, one thing is certain: the waters are no longer just a path to far-off lands—they have become a battleground where only the most skilled will survive."
+              }
+          ]
+      },
+        // featured: true
 ];
-  
