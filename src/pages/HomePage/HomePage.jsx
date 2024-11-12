@@ -1,7 +1,8 @@
-import { articles } from "../data/articles";
+import { articles } from "../../data/articles";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import QuestFeed from "../components/QuestFeed";
+import QuestFeed from "../../components/QuestFeed";
+import styles from './HomePage.module.css';
 
 const HomePage = () => {
     const [filterTag, setFilterTag] = useState("");
@@ -13,7 +14,7 @@ const HomePage = () => {
     const featuredArticle = articles.find(article => article.featured);
 
     return (
-        <div>
+        <div className={styles.container}>
             <h2>Welcome to the Adventurers Guild News</h2>
             <p>Stay up to date with the latest quests, guild news, and tips for aspiring adventurers.</p>
 
