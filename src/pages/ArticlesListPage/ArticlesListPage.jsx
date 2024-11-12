@@ -1,6 +1,7 @@
-import { articles } from "../data/articles";
+import { articles } from "../../data/articles";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+// import styles from './ArticlesListPage.module.css';
 
 const ArticlesListPage = () => {
 
