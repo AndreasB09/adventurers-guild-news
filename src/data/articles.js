@@ -1,12 +1,21 @@
-import greenforest from '../assets/images/articles/greenforest.png';
-import beachnight from '../assets/images/articles/beachnight.jpg';
+import alchemistDesk from '../assets/images/articles/alchemist_desk.jpg';
+import doublePotions from '../assets/images/articles/double_potions.jpg';
+import fantasyGear from '../assets/images/articles/fantasy_gear.jpg';
+import highpointVillage from '../assets/images/articles/highpoint_village.jpg';
+import howlingMoon from '../assets/images/articles/howling_moon.jpg';
+import magicalKraken from '../assets/images/articles/magical_kraken.jpg';
+import mistyAlley from '../assets/images/articles/misty_alley.jpg';
+// import realisticGear from '../assets/images/articles/realistic_gear.jpg';
+import redDragon from '../assets/images/articles/red_dragon.jpg';
+import silverTrail from '../assets/images/articles/silver_trail.jpg';
+import vaultDoor from '../assets/images/articles/vault_door.jpg';
 
 export const articles = [
     { 
         id: 1,
         title: "Dragon Spotted in Northern Highlands",
         snippet: "Reports have come in from local merchants...",
-        image: beachnight,
+        image: redDragon,
         tags: ["breaking news", "news"],
         content: [
             {
@@ -19,7 +28,7 @@ export const articles = [
             },
             {
                 type: "image",
-                src: greenforest,
+                src: highpointVillage,
                 alt: "Highpoint village"
             },
             {
@@ -41,6 +50,7 @@ export const articles = [
         id: 2,
         title: "Top 5 Potions for Beginners",
         snippet: "Never leave the guild without these potions...",
+        image: doublePotions,
         tags: ["beginner"],
         content: [
             {
@@ -54,6 +64,11 @@ export const articles = [
             {
               type: "paragraph",
               text: "Potion 2: Potion of Swiftfoot\nEffect: Increases movement speed for a short time.\nWhen speed is of the essence, the Potion of Swiftfoot can make the difference between life and death. This light blue potion grants the drinker the ability to move at astonishing speeds for a brief period, perfect for dodging incoming attacks, outrunning pursuers, or simply cutting down travel time. New adventurers often find themselves in situations where quick thinking and even quicker feet are needed—don't get caught unprepared."
+            },
+            {
+              type: "image",
+              src: alchemistDesk,
+              alt: "Alchemists Desk"
             },
             {
               type: "paragraph",
@@ -77,6 +92,7 @@ export const articles = [
         id: 3,
         title: "Mysterious bank robbery leaves authorities baffled",
         snippet: "A daring bank heist in the heart of the city has authorities on edge, with no clear leads and a web of speculation surrounding the case.",
+        image: vaultDoor,
         tags: ["news", "crime", "mystery"],
         content: [
             {
@@ -86,6 +102,11 @@ export const articles = [
             {
               type: "paragraph",
               text: "Adding to the intrigue, guards discovered traces of claw marks and deep indentations in the marble floors—signs commonly associated with the Shadow Hounds, spectral canines known to serve Lord Malachor the Enigmatic, whose influence has spread like a dark tide across the realm. Rumors suggest that Nightstalker Wraiths and Obsidian Golems might also be in play, adding to the unease. While these traces provide an unsettling link to Malachor, officials remain tight-lipped about drawing conclusions too soon."
+            },
+            {
+              type: "image",
+              src: mistyAlley,
+              alt: "Misty alleyway"
             },
             {
               type: "paragraph",
@@ -101,7 +122,7 @@ export const articles = [
         id: 4,
         title: "Mastering the Hunt: How to Track and Identify Were-Creatures",
         snippet: "Delving into the art of tracking the elusive were-creatures requires more than just keen senses; it demands experience, insight, and the right tools.",
-        image: greenforest,
+        image: howlingMoon,
         tags: ["experienced", "tracking", "monsters"],
         content: [
           {
@@ -117,8 +138,13 @@ export const articles = [
             text: "Tracking were-creatures requires a sharp eye and detailed knowledge. Here are the most common signs:\n\n- **Unnatural Tracks**: Were-creatures often leave tracks that start as human footprints and morph into clawed, animalistic paw prints. These transitional prints are a telltale sign of a recent transformation.\n- **Claw Marks on Trees and Rocks**: Large gouges, often higher than any natural animal could reach, indicate territorial marking or aggressive behavior.\n- **Strange Fur and Sheddings**: Were-creatures often leave behind tufts of fur that may look ordinary at first glance but carry an unnatural thickness or shine. Collecting samples can help identify specific types."
           },
           {
+            type: "image",
+            src: silverTrail,
+            alt: "Silvery trail in forest"
+          },
+          {
             type: "paragraph",
-            text: "Different were-creatures leave different clues:\n\n- **Werewolves**: Known for howling and traveling in packs during the full moon. Trackers often find bloodied paw prints and remnants of partially consumed prey near their lairs.\n- **Werebears**: Solitary and immensely strong, werebears leave deep, wide footprints. They’re often found near rivers or in mountainous regions.\n- **Wererats**: More cunning and small, wererats are found in urban settings, leaving clawed marks on alley walls and gnawed scraps of food behind.\n- **Other Variants**: Werecats, weretigers, and other regional variants may exhibit behaviors unique to their animal nature, such as claw marks on trees for werecats or lingering in warm climates for weretigers."
+            text: "Different were-creatures leave different clues:\n\n- **Werewolves**: Known for howling and traveling in packs during the full moon. Trackers often find bloodied paw prints and remnants of partially consumed prey near their lairs.\n- **Werebears**: Solitary and immensely strong, werebears leave deep, wide footprints. They're often found near rivers or in mountainous regions.\n- **Wererats**: More cunning and small, wererats are found in urban settings, leaving clawed marks on alley walls and gnawed scraps of food behind.\n- **Other Variants**: Werecats, weretigers, and other regional variants may exhibit behaviors unique to their animal nature, such as claw marks on trees for werecats or lingering in warm climates for weretigers."
           },
           {
             type: "paragraph",
@@ -134,6 +160,7 @@ export const articles = [
           id: 5,
           title: "Rising Peril at Sea: The Mystery of Aggressive Sea Monsters",
           snippet: "Sailors and adventurers alike face growing dread as the seas become increasingly dangerous, with sea creatures displaying unexplained aggression.",
+          image: magicalKraken,
           tags: ["experienced", "sea monsters", "nautical threats"],
           content: [
               {
@@ -150,8 +177,8 @@ export const articles = [
               },
               {
                   type: "image",
-                  src: "path/to/image",
-                  alt: "The mysterious, aggressive sea monsters have transformed the waters into a perilous unknown."
+                  src: fantasyGear,
+                  alt: "Assortment of fantasy diving gear"
               },
               {
                   type: "paragraph",
