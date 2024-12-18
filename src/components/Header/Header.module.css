@@ -2,12 +2,13 @@
     display: flex;
     justify-content: center;
     border-bottom: solid black 1px;
+    margin: 10px;
 }
 
 ul {
     list-style-type: none;
     display: flex;
     gap: 10px;
-
+    justify-content: center;
 }
 

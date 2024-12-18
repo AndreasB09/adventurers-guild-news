@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { articles } from '../../data/articles';
-// import styles from './ArticlePage.module.css';
+import styles from './ArticlePage.module.css';
 
 const ArticlePage = () => {
     const { id } = useParams();
@@ -12,7 +12,7 @@ const ArticlePage = () => {
     }
 
     return (
-        <div>
+        <div className={styles.container}>
             <h2>{article.title}</h2>
             {article.content && article.content.length > 0 ? (
                 article.content.map((contentItem, index) => {
