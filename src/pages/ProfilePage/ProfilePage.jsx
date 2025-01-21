@@ -1,7 +1,7 @@
 import { quests } from "../../data/quests";
 import { useContext, useEffect, useState, useCallback } from "react";
 import { QuestContext } from "../../context/QuestContext";
-// import styles from './ProfilePage.module.css';
+import styles from './ProfilePage.module.css';
 
 const API_BASE = "https://www.dnd5eapi.co/api";
 
@@ -97,9 +97,9 @@ const ProfilePage = () => {
   const abilityOrder = ["STR", "DEX", "CON", "INT", "WIS", "CHA"];
 
   return (
-    <div>
+    <div className={styles.wrapper}>
       <h2>Adventurer Profile</h2>
-      <section>
+      <section className={styles.charInfo}>
         <h3>Character Information</h3>
         <p>Name: {character.name}</p>
         <p>Race: {character.race || "Loading..."}</p>

@@ -1,0 +1,9 @@
+.wrapper {
+   margin: 10px; 
+}
+
+.charInfo {
+    border: black solid 1px;
+    padding: 10px;
+    max-width: 400px;
+}
