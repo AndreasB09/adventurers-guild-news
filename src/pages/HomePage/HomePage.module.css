@@ -1,3 +1,27 @@
 .container {
     text-align: center;
 }
+
+.articleImg {
+    width: 400px;
+    /* height: 400px; */
+}
+
+.featuredNews {
+    border: solid black 1px;
+    margin: 10px 40px;
+}
+
+.filteredArticles {
+    border: solid black 1px;
+    margin: 10px 40px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.articlesContainer {
+    max-width: 500px;
+}
