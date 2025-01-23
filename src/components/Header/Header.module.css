@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     border-bottom: solid black 1px;
-    margin: 10px;
+    padding: 10px;
 }
 
 ul {

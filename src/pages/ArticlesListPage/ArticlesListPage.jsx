@@ -1,7 +1,7 @@
 import { articles } from "../../data/articles";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-// import styles from './ArticlesListPage.module.css';
+import styles from './ArticlesListPage.module.css';
 
 const ArticlesListPage = () => {
 
@@ -12,9 +12,9 @@ const ArticlesListPage = () => {
         : articles;
 
     return (
-        <div>
+        <div className={styles.container}>
             <h2>All Articles</h2>
-            <div>
+            <div className={styles.btnContainer}>
                 <button onClick={() => setFilterTag("")}>All</button>
                 <button onClick={() => setFilterTag("beginner")}>Beginner</button>
                 <button onClick={() => setFilterTag("experienced")}>Experienced</button>
