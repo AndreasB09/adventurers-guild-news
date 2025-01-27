@@ -107,7 +107,7 @@ const ProfilePage = () => {
         <p>Alignment: {character.alignment || "Loading..."}</p>
       </section>
 
-      <section>
+      <section className={styles.abScore}>
         <h3>Ability Scores</h3>
         {character.abilityScores ? (
           <ul>
@@ -122,7 +122,7 @@ const ProfilePage = () => {
         )}
       </section>
 
-      <section>
+      <section className={styles.spells}>
         <h3>Spells</h3>
         <ul>
           {character.spells.map((spell, index) => (
@@ -140,21 +140,23 @@ const ProfilePage = () => {
         {loading ? "Updating..." : "Update Profile"}
       </button>
 
-      <h3>Accepted Quests:</h3>
-      {acceptedQuestsDetails.length > 0 ? (
-        <ul>
-          {acceptedQuestsDetails.map((quest) => (
-            <li key={quest.id}>
-              {quest.title}
-              <button onClick={() => removeQuest(quest.id)}>
-                Remove Quest
-              </button>
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <p>No quests accepted yet.</p>
-      )}
+      <section className={styles.acceptedQ}>
+        <h3>Accepted Quests:</h3>
+        {acceptedQuestsDetails.length > 0 ? (
+          <ul>
+            {acceptedQuestsDetails.map((quest) => (
+              <li key={quest.id}>
+                {quest.title}
+                <button onClick={() => removeQuest(quest.id)}>
+                  Remove Quest
+                </button>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p>No quests accepted yet.</p>
+        )}
+      </section>
     </div>
   );
 };

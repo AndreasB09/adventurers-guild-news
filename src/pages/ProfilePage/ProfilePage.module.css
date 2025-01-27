@@ -6,4 +6,26 @@
     border: black solid 1px;
     padding: 10px;
     max-width: 400px;
+    margin: 10px 0px;
+}
+
+.abScore {
+    border: black solid 1px;
+    padding: 10px;
+    max-width: 400px;
+    margin: 10px 0px;
+}
+
+.spells {
+    border: black solid 1px;
+    padding: 10px;
+    max-width: 400px;
+    margin: 10px 0px;
+}
+
+.acceptedQ {
+    border: black solid 1px;
+    padding: 10px;
+    max-width: 400px;
+    margin: 10px 0px;
 }
