@@ -3,6 +3,7 @@
     justify-content: center;
     border-bottom: solid black 1px;
     padding: 10px;
+    text-align: center;
 }
 
 ul {
@@ -12,3 +13,8 @@ ul {
     justify-content: center;
 }
 
+li {
+    font-style: italic;
+    font-size: 20px;
+    list-style-type: none;
+}
