@@ -2,3 +2,21 @@
   margin: 0;
   padding: 0;
 }
+
+@font-face {
+  font-family: 'IM Fell DW Pica';
+  src: url('./assets/fonts/IMFellDWPica-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IM Fell DW Pica';
+  src: url('./assets/fonts/IMFellDWPica-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+body {
+  font-family: 'IM Fell DW Pica', serif;
+}
